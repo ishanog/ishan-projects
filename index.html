@@ -1,39 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Ishan Shrestha</title>
+  <link rel="shortcut icon" type="image" href="img/iii.jpg">
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-  <header>
-    <a href="index.html" style="text-decoration: none;"><h1>Ishan</h1></a>
+  <header class="sticky-nav">
+    <a href="#Home" style="text-decoration: none;">
+      <h1>Ishan</h1>
+    </a>
     <nav>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="contact.html">Contact</a></li>
-        <li><a href="project.html">Projects</a></li>
-			</ul>
-		</nav>
+      <ul>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Projects">Projects</a></li>
+        <li><a href="#Contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
   <div id="menu-divider"></div>
-  <section class="top">
-    <h1 style="color: green;">WELCOME</h1>
-    <p style="color: darkcyan;"> To my personal website! Here, you can learn all about me, my passions, and my interests. <br>
-
-      I'm Ishan_Shrestha, and I'm a student. On this website, you'll find information about my projects, education and experience. <br>
-      
-      I'm excited to share my journey with you and provide you with some insights into my world. <br>
-
-      Thank you for visiting my website, and I look forward to connecting with you!</p>
-      <a href="project.html" class="btn">My Projects</a>
-  </section>
   <main>
-   
+    <section class="top" id="Home">
+      <h1 style="color: green; font-size: 70px;">WELCOME</h1>
+      <p style="color: black;"> To my personal website! Here, you can learn all about me, my passions, and my interests.
+        <br>
+
+        I'm Ishan_Shrestha, and I'm a student. On this website, you'll find information about my projects, education and
+        experience. <br>
+
+        I'm excited to share my journey with you and provide you with some insights into my world. <br>
+
+        Thank you for visiting my website, and I look forward to connecting with you!
+      </p>
+      <a href="project.html" class="btn">My Projects</a>
+    </section>
+
+    <section class="about" id="About">
+      <div class="cointainer">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="img/iii.jpg" alt="">
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>Hello welcome to my website. Here, you can learn all about me, my passions, and my interests.
+              I'm Ishan_Shrestha, and I'm a student. On this website, you'll find information about my projects, education and experience.
+              I'm excited to share my journey with you and provide you with some insights into my world.
+              Thank you for visiting my website, and I look forward to connecting with you!</p>
+
+              <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links"onclick="opentab('education')">Education</p>
+              </div>
+             <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Web Development</span><br>Web App Development</li>
+              </ul>
+             </div>
+             <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2020-2022</span><br>Made website for personal use</li>
+                <li><span>2022-2023</span><br>Made website for 2 brands</li>
+              </ul>
+             </div>
+             <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2022-Till date</span><br>Nccs(National College Computer Studies)</li>
+              </ul>
+             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="Projects">
+      <div class="sub_topic">
+        <h3>My Work</h3>
+      </div>
+      <div class="project">
+        <img src="img/book.png" alt="logo">
+        <h2>The Bookshelf</h2>
+        <p>
+          The Bookshelf is a dummy website which I created as part of my computer science project. Although this website
+          is not operational,
+          it serves as an example of what a functional online bookstore could look like.
+        </p> <br>
+        <a href="https://ishanog.github.io/TheBookshelf/" class="btn">View Website</a>
+      </div>
+
+      <div class="project">
+        <img src="img/lex.jpg" alt="logo">
+        <h2>LexBeat</h2>
+        <p>This is the website created by me for the LexBeat store.</p> <br> <br> <br> <br>
+        <a href="https://ishanog.github.io/Lex-beat-12/" class="btn">View Website </a>
+      </div>
+    </section>
+
+
+
+    <section class="contact" id="Contact">
+      <div id="disc">
+        <h2><u>Contact Me</u></h2>
+        <p><i class="fa-solid fa-paper-plane"></i>ishanshrestha144@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i>9847697495</p>
+        <div class="social_icon">
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+        </div>
+
+      </div>
+
+      <form>
+        <label for="message"></label>
+        <input type="text" size="60" id="name" name="name" placeholder="Your Name" required>
+
+        <label for="message"></label>
+        <input type="email" size="60" id="email" name="email" placeholder="Your Email" required>
+
+        <label for="message"></label>
+        <textarea id="message" name="message" required rows="6" cols="30" placeholder="Your Message"></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
   </main>
   <footer>
     <p>Copyright © 2023 Ishan_Shrestha</p>
   </footer>
+
+  <script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+
+  </script>
+
+
+
 </body>
+
 </html>
