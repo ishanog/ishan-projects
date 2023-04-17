@@ -66,11 +66,32 @@ main {
 
 .text{
 	margin-top: 230px;
+	flex-basis: 60%;
 }
 
 
 .text h1 span{
 	color:white;
+}
+
+.row{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.home-col-1{
+	flex-basis: 60%;
+}
+
+.home-col-2 img{
+	width: 100%;
+	border-radius: 15px;
+}
+
+.home-col-2{
+	flex-basis: 35%;
+	margin-top: 60px;
 }
 
 .top {
