@@ -244,6 +244,9 @@ main {
 	border: 5px solid white;
 }
 
+.text-center {
+	text-align: center;
+  }
 
 .sub_topic {
 	font-size: 36px;
