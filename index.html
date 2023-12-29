@@ -13,6 +13,9 @@
 </head>
 
 <body>
+  
+	<div id="preloader"></div>
+
   <header class="sticky-nav">
     <a href="#Home" style="text-decoration: none">
       <img src="img/Ishan.png" alt="" id="logo" />
@@ -23,6 +26,7 @@
         <li><a href="#About">About</a></li>
         <li><a href="#Projects">Projects</a></li>
         <li><a href="#Contact">Contact</a></li>
+        <li><a href="./portfolio.html">Portfolio</a></li>
       </ul>
     </nav>
   </header>
@@ -200,6 +204,13 @@
         })
         .catch((error) => console.error("Error!", error.message));
     });
+  </script>
+
+  <script>
+    		var loader = document.getElementById("preloader");
+		window.addEventListener("load", function () {
+			loader.style.display = "none"
+		})
   </script>
 </body>
 

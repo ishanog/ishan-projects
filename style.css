@@ -393,6 +393,60 @@ footer a:hover {
 	display: block;
 }
 
+/*------- portfolio -------*/
+#loadingScreen {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #191919; /* Black background */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 9999;
+}
+
+#loaderImage {
+	width: 100px; /* Adjust the width of the image */
+	height: 100px; /* Adjust the height of the image */
+	/* Additional styles for centering */
+	display: block;
+}
+
+#preloader {
+	background: #1E6CC7 url(img/loader.gif) no-repeat center center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #191919; /* Black background */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 100;
+}
+
+#cmsscreen{
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+#cms{
+	max-width: 100%;
+	max-height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 @media (max-width: 1140px) {
 
 
