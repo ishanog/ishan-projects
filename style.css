@@ -410,7 +410,7 @@ footer a:hover {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: #191919; /* Black background */
+	background-color: #191919; 
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -418,9 +418,8 @@ footer a:hover {
 }
 
 #loaderImage {
-	width: 100px; /* Adjust the width of the image */
-	height: 100px; /* Adjust the height of the image */
-	/* Additional styles for centering */
+	width: 100px;
+	height: 100px;
 	display: block;
 }
 
