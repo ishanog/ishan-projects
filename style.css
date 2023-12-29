@@ -118,6 +118,7 @@ main {
 	font-size: 60px;
 	font-weight: 600;
 	color: green;
+	text-decoration: underline;
 }
 
 .about p {
@@ -232,6 +233,9 @@ main {
 	margin: 0;
 }
 
+.project h2{
+	text-decoration: underline;
+}
 .project p {
 	margin: 1rem 0;
 	text-align: center;
@@ -251,8 +255,8 @@ main {
 .sub_topic {
 	font-size: 36px;
 	margin-bottom: 30px;
-	text-align: left;
 	color: green;
+	text-decoration: underline;
 }
 
 
@@ -448,7 +452,8 @@ footer a:hover {
 }
 
 
-@media (max-width: 1002px) {
+
+@media (max-width: 1140px) {
 
 
 	#logo {
@@ -494,7 +499,10 @@ footer a:hover {
 
 	.about-col-2 {
 		flex-basis: 100%;
-		margin-top: 6%;
+	}
+
+	.sub-title{
+		text-decoration: underline;
 	}
 
 	.about-col-1 {
@@ -507,8 +515,14 @@ footer a:hover {
 		font-size: 40px;
 	}
 
+	.about img{
+		max-width: 0%;
+		max-height: 0%;
+	}
+
 	.project h2{
 		font-size: 50px;
+		text-decoration: underline;
 	}
 
 	.project p {
@@ -525,7 +539,12 @@ footer a:hover {
 		width: 90%;
 		height: 42%;
 		text-align: center;
-		margin-top: 24%;
+		margin-top: 10%;
+	}
+
+	.sub_topic{
+		margin-top: 20%;
+		text-decoration: underline;
 	}
 
 	.btn{
@@ -570,7 +589,7 @@ footer a:hover {
 	}
 
 	.contact {
-		margin-top: 25vh;
+		margin-top: 50%;
 		height: 100%;
 		display: flex;
 		flex-direction: column;
@@ -582,10 +601,11 @@ footer a:hover {
 	}
 
 	.contact h2 {
-		font-size: 70px;
+		font-size: 100px;
 		margin-bottom: 30px;
 		text-align: center;
 		color: green;
+
 	}
 
 	.contact form {
@@ -595,7 +615,6 @@ footer a:hover {
 		color: green;
 		align-items: stretch;
 	}
-
 	
 }
 
