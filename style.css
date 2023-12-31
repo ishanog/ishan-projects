@@ -424,7 +424,7 @@ footer a:hover {
 }
 
 #preloader {
-	background: #1E6CC7 url(img/loader.gif) no-repeat center center;
+	background: url(img/loader.gif) cover;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -434,8 +434,9 @@ footer a:hover {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	z-index: 100;
-}
+	z-index: 9999;
+   }
+
 
 #cmsscreen{
 	position: fixed;
